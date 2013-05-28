@@ -1,0 +1,154 @@
+/* 
+    Document   : DiseñoPaginaPrincipal
+    Created on : 13-mar-2012, 19:03:46
+    Author     : familia
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+/*Se importa Diseño base*/
+@import url(DiseñoBase.css);
+
+/*  -------------------------------------------------------------
+  BODY
+  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+body {}
+
+
+/*  -------------------------------------------------------------
+  TITULO "Tutor Adaptativo Inteligente"
+  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+#bienvenida {
+    display: inline-table;
+    
+    margin: auto;
+    padding: 0em 0em 0em 0em;
+    width: 100%;
+    /*border: 0.1em solid white;*/
+    background: white;
+}
+/*  -------------------------------------------------------------
+  TITULO "Tutor Adaptativo Inteligente"
+  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+#cuadroTitulo {
+    /*background: greenyellow;*/
+}
+
+/*  -------------------------------------------------------------
+  CONTENEDOR DE LOGIN Y REGISTRO
+  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+#cuerpo{
+    /*background: yellow;*/
+}
+
+/*  -------------------------------------------------------------
+  CAJA CON EL CONTENIDO
+  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */  
+#contenedorColumnas {
+    width: 100%;
+    margin: auto;
+}
+
+#columnaPrincipal {
+    padding: 0.2em 0em 0em 0.3em;
+}
+
+#columnaPrincipal p {
+    text-align: justify;
+}
+#columnaPrincipal #bibliografia {
+    font-size: 0.9em;
+    font-style: italic;
+    text-align: left;
+}
+
+table, tr, td{   
+    width: 97%;
+    text-align: justify;
+    margin: 1.2em 1.5% 1.8em 1.5%;
+}
+    #tablaVideo {
+        width: auto;
+        float: right;
+    }
+    #tablaVideo,#tablaVideo tr, #tablaVideo td {
+        margin: 0em 0em 0.5em 0em;
+        padding: 0em 0em 0em 1em;
+    }
+    #tablaVideo h2 {
+        font-family: 'Signika', 'Germania One', arial, serif;
+        font-size: 1.2em;
+        margin: 1em 0em 0.5em 0em;
+        height: 1em;
+        text-transform: none;
+    }
+    #tablaVideo #descripcionVideo{
+        font-size: 0.9em;
+        font-style: italic;
+        text-align: center;
+    }
+    #videoYoutube {
+        position: relative;
+        z-index: -1;
+        width: 24em;
+        height: 19.42em;
+    }
+    img{
+        margin: auto;
+        background: white;
+    }
+
+/*  -------------------------------------------------------------
+  ESTILO DE ETIQUETAS
+  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+label {
+    margin: 0.1em auto 0.1em 0.9em;
+}
+    /*  Modernizr: texto sombreado
+       - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+    #nivel {
+        margin: 0.55em auto 0.5em 0.9em;
+    }
+
+/*  -------------------------------------------------------------
+  ESTILO DE CUADROS DE ENTRADA
+  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+input {     
+    width: 15.0em; 
+    height: 1.6em; 
+    margin:  0.1em 0em 0.7em 0.9em; 
+}
+    /* Select
+       - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+    #selectNivel {
+        width: 12.56em; 
+        height: 2em; 
+        margin: 0.55em auto 0.7em 0.9em;
+    }
+
+/*  -------------------------------------------------------------
+  ESTILO DE ENLACES DE CLASE "boton"
+  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+.boton{
+    width: 8em; 
+    height: auto;  
+    
+    clear: both;
+    float: right;
+    margin: 0.5em auto 0.5em auto;
+    padding: 0.5em 0.7em 0.5em 0.7em;
+}
+  
+/*  -------------------------------------------------------------
+  PIE DE PÁGINA
+  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+footer {}
+
+h2 {
+    margin-top: 0em;
+    margin-bottom: 0.6em;
+}
+h6 {
+    margin: auto 1em auto auto;    
+    text-align: right;
+}

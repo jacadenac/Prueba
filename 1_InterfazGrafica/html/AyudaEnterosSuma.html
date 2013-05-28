@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>TAI-AyudaEnterosSuma</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel="stylesheet" href="../css/Ayuda.css" type="text/css" media="screen">
+        <!--Libreria modernizr para compatibilidad con css3 y html5-->
+        <script src="../../2_Controlador/modernizr.2.5.3.js"></script>
+    </head>
+    <body>
+            <header>
+                <div id="cuadroTitulo"> 
+                    <div id="imagenLogo"></div>
+                    <h1>TUTOR ADAPTATIVO INTELIGENTE</h1>
+                </div>
+            </header>          
+            <nav>
+                <ul id="menu">
+                    <li><a href="Inicio.html">Inicio</a></li>
+                    <li><a href="#">Ayuda</a>
+                        <ul>
+                            <li>
+                                <a href="#">Enteros</a>
+                                <ul>
+                                    <li><a href="AyudaEnterosSuma.html">Suma</a></li>
+                                    <li><a href="AyudaEnterosResta.html">Resta</a></li>
+                                    <li><a href="AyudaEnterosMultiplicacion.html">Multiplicación</a></li>
+                                    <li><a href="AyudaEnterosDivision.html">División</a></li>
+                                 </ul>
+                            </li>
+                            <li>
+                                <a href="#">Fraccionarios</a>
+                                <ul>
+                                    <li><a href="AyudaFraccionariosSuma.html">Suma</a></li>
+                                    <li><a href="AyudaFraccionariosResta.html">Resta</a></li>
+                                    <li><a href="AyudaFraccionariosMultiplicacion.html">Multiplicación</a></li>
+                                    <li><a href="AyudaFraccionariosDivision.html">División</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">Decimales</a>
+                                <ul>
+                                    <li><a href="AyudaDecimalesSuma.html">Suma</a></li>
+                                    <li><a href="AyudaDecimalesResta.html">Resta</a></li>
+                                    <li><a href="AyudaDecimalesMultiplicacion.html">Multiplicación</a></li>
+                                    <li><a href="AyudaDecimalesDivision.html">División</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a href="Perfil.html">Perfil</a></li>
+                    <li><a href="index.html">Salir</a></li>
+                </ul>
+            </nav>
+            <div id="contenedorColumnas">
+                <section id="columnaPrincipal">
+                    <table>
+                        <tr><td><h2>Suma de Enteros</h2> 
+                                
+                        <table id="tablaVideo">
+                            <tr><td><h2>Video de Ayuda</h2></td></tr>
+                            <tr><td>
+                                <object id="videoYoutube" width="425" height="344" type="application/x-shockwave-flash" data="https://www.youtube-nocookie.com/v/6pfWMZfRRVs?version=3&amp;hl=es_ES&amp;rel=0">
+                                    <param name="movie" value="https://www.youtube-nocookie.com/v/6pfWMZfRRVs?version=3&amp;hl=es_ES&amp;rel=0" />
+                                </object>
+                                <!--<video controls width="360" height="240" poster="">
+                                <source src="http://youtu.be/6pfWMZfRRVs" type="video/mp4" />
+                                <object type="application/x-shockwave-flash" width="360" height="240" data="player.swf?file=archivo.mp4">
+                                    <param name="videoAyuda" value="player.swf?file=archivo.mp4" />
+                                </object>
+                            </video></td></tr>-->
+                            </td></tr>
+                            <tr><td><p id="descripcionVideo">Descripción del Video</p></td></tr>
+                        </table> 
+
+                        <p>El procedimiento estándar para efectuar sumas de varios
+                        números, llamados "sumandos", es el siguiente:</p>
+                        <p>Los sumandos se colocan en filas sucesivas ordenando
+                        las cifras en columnas, empezando por la derecha con
+                        la cifra de las unidades(U), a la izquierda las 
+                        decenas(D), la siguiente las centenas(C), la siguiente
+                        los millares(M), etc.</p>
+                        <p>La suma de los números 750 + 1583 + 69 se ordenarían
+                        de la siguiente forma:</p>
+
+                        <p>Descripción: </p>
+                        <img class="imagenAyuda" src="../imagenes/PaginasAyuda2/Enteros/Suma/paso1.png" />
+                        <br/>
+                        <p>Se suman en primer lugar las cifras de la columna de
+                        las unidades según las tablas elementales, colocando
+                        en el resultado la cifra de unidades que resulte; 
+                        cuando estas unidades sean más de 10 las decenas se
+                        acumulan como un sumando más en la fila de acarreo.
+                        En este caso 3 más 9 son 12, el 2 del 12 se pone en
+                        la parte inferior y el 1 se pasa como acarreo en la
+                        columna siguiente.</p>
+                        <img class="imagenAyuda" src="../imagenes/PaginasAyuda2/Enteros/Suma/paso2.png" />
+                        <br/>
+                        <p>En la columna de las decenas, procediendo entonces
+                        a la suma de esa columna como si fueran unidades.
+                        Sumamos el 1 del acarreo más 5, 8 y 6 que dan un 
+                        total de 20, el 0 de 20 se pone en la parte inferior
+                        como resultado y el 2 se pasa como acarreo a la 
+                        columna siguiente.</p>
+                        <img class="imagenAyuda" src="../imagenes/PaginasAyuda2/Enteros/Suma/paso3.png" />
+                        <br/>
+                        <p>Se procede de igual forma con la columna de las
+                        decenas, acarreo incluido, colocando en la fila 
+                        de acarreo sobre la columna de las centenas las 
+                        decenas (de unidades de decenas).<br/>
+                        En la columna de las centenas tenemos, el 2 de 
+                        acarreo, el 7 y el 5 que sumados dan 14, el 4 del
+                        14 se pone en la parte inferior y el 1 se pasa a
+                        la siguiente columna como acarreo.</p>
+                        <img class="imagenAyuda" src="../imagenes/PaginasAyuda2/Enteros/Suma/paso4.png" />
+                        <br/>
+                        <p>Se procede de igual forma con todas las columnas, 
+                        añadiendo a la columna última de la izquierda las
+                        decenas de la columna anterior en vez de subir a 
+                        la fila de acarreo.<br/>
+                        En la columna de los millares tenemos 1 de acareo
+                        más el 1 de sumando que sumados dan 2, que se pone
+                        en la parte inferior como resultado, al no haber 
+                        mas sumandos damos por finalizada la operación.</p>
+                        <br/><br/>
+                        <img class="imagenAyuda" src="../imagenes/PaginasAyuda2/Enteros/Suma/paso5.png" />
+                        <br/>
+                        <p>Normalmente los acarreos o llevadas no se anotan
+                        en el papel, sumando directamente el acarreo a 
+                        los sumandos de la columna siguiente y el aspecto
+                        de la realización de la suma sin las anotaciones
+                        auxiliares sería el siguiente:</p>
+                        <img class="imagenAyuda" src="../imagenes/PaginasAyuda2/Enteros/Suma/paso6.png" />
+                        <br/>
+                        <p id="bibliografia"><br/>Tomado de Wikipedia: <br/><a href="http://es.wikipedia.org/wiki/Suma">http://es.wikipedia.org/wiki/Suma</a>
+                        </p></td></tr>
+                    </table>
+                </section>
+            </div>
+            
+            <footer>
+                <div id="pieDePagina">pie de página</div>
+            </footer>
+    </body>
+</html>

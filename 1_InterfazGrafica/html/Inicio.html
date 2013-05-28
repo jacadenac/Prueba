@@ -1,0 +1,83 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>TAI-Inicio</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel="stylesheet" href="../css/Inicio.css" type="text/css" media="screen">
+        <script type="text/javascript" src="../../2_Controlador/cookiePregunta.js"></script>
+        <script type="text/javascript" src="../../2_Controlador/Inicio.js"></script>
+        <!--Libreria modernizr para compatibilidad con css3 y html5-->
+        <script src="../../2_Controlador/modernizr.2.5.3.js"></script>
+    </head>
+    <body>
+            <header>
+                <div id="cuadroTitulo"> 
+                    <div id="imagenLogo"></div>
+                    <h1>TUTOR ADAPTATIVO INTELIGENTE</h1>
+                </div>
+            </header> 
+            <nav>
+                 <ul id="menu">
+                    <li><a href="Inicio.html">Inicio</a></li>
+                    <li><a href="#">Ayuda</a>
+                        <ul>
+                            <li>
+                                <a href="#">Enteros</a>
+                                <ul>
+                                    <li><a href="AyudaEnterosSuma.html">Suma</a></li>
+                                    <li><a href="AyudaEnterosResta.html">Resta</a></li>
+                                    <li><a href="AyudaEnterosMultiplicacion.html">Multiplicación</a></li>
+                                    <li><a href="AyudaEnterosDivision.html">División</a></li>
+                                 </ul>
+                            </li>
+                            <li>
+                                <a href="#">Fraccionarios</a>
+                                <ul>
+                                    <li><a href="AyudaFraccionariosSuma.html">Suma</a></li>
+                                    <li><a href="AyudaFraccionariosResta.html">Resta</a></li>
+                                    <li><a href="AyudaFraccionariosMultiplicacion.html">Multiplicación</a></li>
+                                    <li><a href="AyudaFraccionariosDivision.html">División</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">Decimales</a>
+                                <ul>
+                                    <li><a href="AyudaDecimalesSuma.html">Suma</a></li>
+                                    <li><a href="AyudaDecimalesResta.html">Resta</a></li>
+                                    <li><a href="AyudaDecimalesMultiplicacion.html">Multiplicación</a></li>
+                                    <li><a href="AyudaDecimalesDivision.html">División</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a href="Perfil.html">Perfil</a></li>
+                    <li><a href="index.html">Salir</a></li>
+                </ul>
+            </nav>
+            <div id="contenedorColumnas">
+                <section id="columnaPrincipal">
+                <table>
+                   <tr><td><h2>INICIAR TEST</h2></td></tr>
+                   <tr><td>
+                       <table>
+                           <tr>
+                               <td>imagen pendiente</td>
+                               <td>imagen pendiente</td>
+                               <td>imagen pendiente</td>
+                           </tr>
+                           <tr>
+                               <td><input type="submit" class="boton" onClick="setearLevel(1)" id="btnEnteros" value="Enteros"/></td>
+                               <td><input type="submit" class="boton" onClick="setearLevel(2)" id="btnFraccionarios" value="Fraccionarios"/></td>
+                               <td><input type="submit" class="boton" onClick="setearLevel(3)" id="btnDecimales" value="Decimales"/></td>
+                           </tr>         
+                       </table>    
+                   </td></tr>
+                </table>
+                </section>
+            </div>
+            <footer>
+                <div id="pieDePagina">pie de pagina</div>
+            </footer>
+    </body>
+</html>

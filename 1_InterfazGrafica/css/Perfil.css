@@ -1,0 +1,212 @@
+/* 
+    Document   : DiseñoPaginaPrincipal
+    Created on : 13-mar-2012, 19:03:46
+    Author     : familia
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+/*Se importa Diseño base*/
+@import url(DiseñoBase.css);
+
+/*  -------------------------------------------------------------
+  BODY
+  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+body {}
+
+/*  -------------------------------------------------------------
+  TITULO "Tutor Adaptativo Inteligente"
+  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+#cuadroTitulo {}
+
+/*  -------------------------------------------------------------
+  CONTENEDOR DE TODA LA PAGINA
+  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+#cuerpo{
+    /*background: yellow;*/
+}
+
+/*  -------------------------------------------------------------
+  CAJA CON EL CONTENIDO
+  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+#contenedorColumnas{
+    margin: auto;
+}
+
+/*  -------------------------------------------------------------
+  CONTENEDOR DE COLUMNAS
+  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+
+#contenedorColumnas{
+    
+}
+
+.rgba #columnaPrincipal{
+        border-radius: 1em;
+        background: -moz-linear-gradient(top, rgba(254,254,254,0.95) 0%, rgba(230,230,230,0.9) 100%);
+	background: -webkit-gradient(linear, left top, left bottom,
+            color-stop(0%,rgba(254,254,254,0.95)), color-stop(100%,rgba(230,230,230,0.9)));
+        background: -o-linear-gradient(rgba(254,254,254,0.95),rgba(230,230,230,0.9));
+        background: -ms-linear-gradient(rgba(254,254,254,0.95), rgba(230,230,230,0.9)); /*IE10*/
+        background: linear-gradient(rgba(254,254,254,0.95), rgba(230,230,230,0.9));
+}
+    
+    #tablas, #tablas tr, #tablas td {
+        background: transparent;
+        padding: 0;
+        width: 100%;
+    }
+
+    #ranking, #nivelActual{
+        opacity: 1;
+        width: 44%; 
+    }
+    #ranking{
+        float:left;
+        margin: 0.8em 1.96% 3em 1.96%;
+    } 
+    #nivelActual {
+        float: right;
+        margin: 0.8em 1.96% 3em 2.36%;
+        padding: 0;
+    }
+    .boxshadow #ranking, .boxshadow #nivelActual {
+        box-shadow: 0.04em 0.04em 0.25em black;
+    }
+
+    
+    #ranking td, #ranking th, #nivelActual td, #nivelActual th{
+        border: 0.1em solid #053a1e;
+        height: 2.3em;
+        background: white;
+        padding-left: 6%;
+        width: 50%;
+        font-weight: 600;
+        font-size: 0.9em;
+    }
+    .textshadow #ranking td, .textshadow #nivelActual td{
+        text-shadow: 0.08em 0.08em 0.2em white;
+    }
+    
+    #nivelActual td{
+        padding: 0;
+        margin: auto;
+        text-align: center;
+    }
+    #imagenNivel{
+        margin: 1em 1em 0em 1em;
+        width: 10em;
+        height: 10em;
+    }
+    
+    #ranking th, #nivelActual th{
+        padding: 0;
+        text-align: center;
+        font-weight: 600;
+        color: white;
+        font-size: 1.06em;
+    }
+    .textshadow #ranking th, .textshadow #nivelActual th{
+        text-shadow: 0.08em 0.08em 0.2em black;
+    }
+   
+    #ranking .pts {
+        padding: 0em;
+        text-align: center;
+    }
+    .rgba #ranking th, .rgba #nivelActual th{
+        background: -moz-linear-gradient(top, rgba(14,84,47,1) 0%, rgba(66,143,73,0.97) 40%, rgba(67,149,75,0.97) 55%,  rgba(14,84,47,1) 100%);
+        background: -webkit-gradient(linear, left top, left bottom,
+            color-stop(0%,rgba(14,84,47,1)), color-stop(40%,rgba(66,143,73,0.97)), color-stop(55%,rgba(67,149,75,0.97)), color-stop(100%,rgba(14,84,47,1)));
+        background: -o-linear-gradient(#a0d6e7,#65b6cf,#a0d6e7);
+        background: -ms-linear-gradient(#a0d6e7, #65b6cf, #a0d6e7);
+        background: linear-gradient(#a0d6e7, #65b6cf, #a0d6e7);
+    }  
+    .rgba #ranking  tr td, .rgba #nivelActual  tr td {       
+        background: -moz-linear-gradient(top, rgba(223,229,195,0.95) 0%, rgba(233,236,217,0.95) 100%);
+	background: -webkit-gradient(linear, left top, left bottom,
+            color-stop(0%,rgba(223,229,195,0.95)), color-stop(100%,rgba(233,236,217,0.95)));
+        background: -o-linear-gradient(rgba(223,229,195,0.95),rgba(233,236,217,0.95));
+        background: -ms-linear-gradient(rgba(223,229,195,0.95), rgba(233,236,217,0.95));
+        background: linear-gradient(rgba(223,229,195,0.95), rgba(233,236,217,0.95));
+    }
+    
+    .no-cssgradients #ranking th, #nivelActual th{
+        filter: progid:DXImageTransform.Microsoft.gradient( 
+            startColorstr='#a0d6e7', endColorstr='#65b6cf',GradientType=0 ); /* IE6-9 */
+    }
+    .no-cssgradients #ranking th, #nivelActual th{
+        filter: progid:DXImageTransform.Microsoft.gradient( 
+            startColorstr='#e6e6e6', endColorstr='#fefefe',GradientType=0 ); /* IE6-9 */
+    }
+    /*
+    #ranking, #nivelActual, #ranking th,#ranking tr,#ranking tr, #nivelActual th, #nivelActual tr, #nivelActual td {
+        border: none;
+        
+    }*/
+
+   
+/*  -------------------------------------------------------------
+  ESTILO DE ETIQUETAS
+  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+label {
+    margin: 0.1em auto 0.1em 0.9em;
+}
+    /*  Modernizr: texto sombreado
+       - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+    #nivel {
+        margin: 0.55em auto 0.5em 0.9em;
+    }
+
+/*  -------------------------------------------------------------
+  ESTILO DE CUADROS DE ENTRADA
+  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+input {     
+    width: 15.0em; 
+    height: 1.6em; 
+    margin:  0.1em 0em 0.7em 0.9em; 
+}
+    /* Select
+       - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+    #selectNivel {
+        width: 12.56em; 
+        height: 2em; 
+        margin: 0.55em auto 0.7em 0.9em;
+    }
+
+/*  -------------------------------------------------------------
+  ESTILO DE ENLACES DE CLASE "boton"
+  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+.boton{
+    width: 9em; 
+    height: 3em;
+    clear: both;
+    float: right;
+    margin: 0.5em auto 0.5em auto;
+
+}
+
+#btnEnteros, #btnFraccionarios, #btnDecimales {
+    float:none;
+    /*margin: 0.5em 1em 0.5em 2em;*/
+}
+
+  
+/*  -------------------------------------------------------------
+  PIE DE PÁGINA
+  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+footer {}
+
+h2 {
+    margin: 0.8em 1em 0em 2.5%;
+}
+
+h3 {
+    text-align: left;
+    font-size: 1.4em;
+    margin: 0.3em 1em 0em 2.5%;
+}
+h6 {
+    margin: auto 1em auto auto;    
+    text-align: right;
+}

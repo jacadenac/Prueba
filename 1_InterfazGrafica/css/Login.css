@@ -1,0 +1,117 @@
+/* 
+    Document   : LoginDesign
+    Created on : 10-mar-2012, 16:51:23
+    Purpose of the stylesheet follows.
+*/
+
+/*Se importa Diseño base*/
+@import url(DiseñoBase.css);
+
+/*  -------------------------------------------------------------
+  BODY
+  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+body {}
+
+/*  -------------------------------------------------------------
+  TITULO "Tutor Adaptativo Inteligente"
+  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+#cuadroTitulo {}
+
+/*  -------------------------------------------------------------
+  CONTENEDOR DE LOGIN Y REGISTRO
+  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+#cuerpo{}
+
+/*  -------------------------------------------------------------
+  COLUMNAS: (login y registro)
+  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+#formularios {
+    margin: auto;
+    min-width: 51em;
+    width: 73%;
+    max-width: 70em;
+}
+
+form{
+    width: 20em; 
+    padding: 1em 1.1em 1em 2em; 
+}
+.csstransitions form, .csstransforms form {
+    -webkit-transition: all 0.8s;
+    -moz-transition: all 0.8s;
+    -moz-transform: scale (1, 1);
+    -webkit-transform: scale (1, 1);
+     opacity: 0.95;
+}
+
+.csstransforms form:hover {
+    opacity: 1.5;
+    -moz-transform: scale(1.03, 1.03);
+    -webkit-transform: scale(1.03, 1.03);
+}
+
+    #formularioLogin{
+        margin: 0.8em 1.96% 1em 1.96%;
+    } 
+    #formularioRegistro {
+        float:right;
+        margin: 0.8em 1.96% 1em 2.36%;
+    }
+    table,tr,td {
+        border: 0em solid black;
+        width: 8em;
+    }
+
+/*  -------------------------------------------------------------
+  ESTILO DE ETIQUETAS
+  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+label {
+    margin: 0.1em auto 0.1em 0.9em;
+}
+    /*  Modernizr: texto sombreado
+       - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+    #nivel {
+        /*float: left;*/
+        margin: 0.6em auto 0.5em 0.9em;
+    }
+
+/*  -------------------------------------------------------------
+  ESTILO DE CUADROS DE ENTRADA
+  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+input {     
+    width: 15.0em; 
+    height: 1.6em; 
+    margin:  0.1em 0em 0.7em 0.9em; 
+}
+    /* Select
+       - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+    #selectNivel {
+        float: right;
+        width: 12em; 
+        height: 2em; 
+        margin: 0.8em auto 0.7em 0.7em;
+    }
+
+/*  -------------------------------------------------------------
+  ESTILO DE ENLACES DE CLASE "boton"
+  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+.boton{
+    width: 8em; 
+    /*height: auto;  */
+    
+    clear: both;
+    float: right;
+    margin: 0.7em auto 0.5em 4.5em;
+}
+  
+/*  -------------------------------------------------------------
+  PIE DE PÁGINA
+  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+footer {}
+
+/*  -------------------------------------------------------------
+  TITULOS DE LOS FORMULARIOS
+  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+h2{
+   text-align: center;
+}

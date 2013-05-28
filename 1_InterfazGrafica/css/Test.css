@@ -1,0 +1,255 @@
+/* 
+    Document   : PrimaryTest
+    Created on : 19-mar-2012, 17:31:15
+    Author     : familia
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+/*Se importa Diseño base*/
+@import url(DiseñoBase.css);
+
+/*  -------------------------------------------------------------
+  TITULO "Tutor Adaptativo Inteligente"
+  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+#cuadroTitulo {}
+body {
+    min-width: 51em; 
+    width: 75%; 
+    height: 100%;
+    
+    margin: 0 auto 0 auto;
+    padding: 0.5em;
+    
+    font-size: 1em;
+    font-family: sans-serif;  
+}
+
+/*  -------------------------------------------------------------
+  COLUMNAS: (pregunta e información)
+  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+form{
+    padding: 1em 1.1em 1em 2em; 
+}
+    #test {
+        width: 77%;
+        margin: 1em 1em 1em 1em;
+        padding: 0.3em 0em 1em 0em;
+    }
+    #informacion {
+        float: right;
+        width: 15%;
+        margin: 1em 1.8% 1em 0em;
+        padding: 0.3em 0.4em 1em 0.4em;
+    }
+    /*  Modernizr: bordes redondeados "login" y "registro"
+       - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+    .borderradius #test, .borderradius #informacion {
+        border-radius: 0.7em;
+       
+        -webkit-border-radius-bottomleft: 1%;
+        -webkit-border-radius-topright: 1%;
+        -webkit-border-radius-bottomright: 8%;
+        -webkit-border-radius-topleft: 8%;
+        
+        -moz-border-radius-bottomleft: 0.1em;
+        -moz-border-radius-topright: 0.1em;
+        -moz-border-radius-bottomright: 1.5em;
+        -moz-border-radius-topleft: 1.5em;
+    }
+    
+    #test table, #test tr, #test td {
+        width: 100%;
+        text-align: center;
+    }
+    
+    #informacion table, #informacion tr, #informacion td {
+        width: 100%;
+        text-align: center;
+    }
+
+    /*  ESTILO DE CUADROS DE ENTRADA
+   - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -*/
+input {
+    margin: 0.3em;
+}
+
+    #numeroPregunta, #tituloTest {
+        float: left;
+        background-color: transparent;
+        border: none;
+        font-family: 'Bubblegum Sans', 'Kaushan Script', serif;
+        text-align: center;
+        text-transform: uppercase;
+        text-shadow: 0em 0.062em 0em #f2f2f2;
+    }
+    #numeroPregunta{
+        width: 2em;
+        color: #0d1f10;
+        font-size: 1.4em;
+        margin-left: auto;
+  
+    }
+    #tituloTest {
+        width: 75%;
+        margin: 0.3em 0.3em 0.3em -2.8%;
+        color: #0d1f10;
+        font-size: 1.5em;
+    }
+
+    #pregunta{
+        width: 90%;
+        margin: 3em 0.3em 1em 0.3em;
+        padding: 0em 0.3em 0.1em 0.3em;
+
+        background-color: transparent;
+        border: none;
+        text-align: center;
+        font-size: 1.8em;
+        font-family: 'Kaushan Script', 'Bubblegum Sans', serif;
+        color: #344c39;
+        border-radius: 0em;
+        border: 0em solid white;
+    }
+        /*  Modernizr: sombras de los cuadros
+       - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+        .boxshadow input {
+            box-shadow: 0em 0em 0em transparent;
+            -moz-box-shadow: 0em 0em 0em transparent;
+            -webkit-box-shadow: 0em 0em 0em transparent;
+            -o-box-shadow: 0em 0em 0em transparent;
+        }
+    /*  Cuadro de respuesta 
+    - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -*/
+
+    #testTabla {
+        text-align: center;
+    }
+    #testTabla tr td{
+        width: 25%;
+    }
+    #testTabla #filaNumeros td{
+        padding: 1em 0 0 0;
+    }
+    #testTabla #filaRespuestas td{
+        padding: 0 0 1.5em 0;
+    }
+    #testTabla .numeroRespuesta {
+        text-align: center;
+        font-size: 1em;
+        margin: auto auto auto auto;
+    }
+    #testTabla .boton{
+        width: 95%;
+        height: 2.2em;
+        margin: auto;
+        font-size: 1.4em;
+    }
+ 
+/*  -------------------------------------------------------------
+  ESTILO DE ENLACES DE CLASE "boton"
+  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+.boton{
+    width: 5em; 
+    height: auto;  
+    
+    margin: 0.6em auto 0.1em auto;
+    padding: 0.2em 0.7em 0.2em 0.7em;
+    
+    font-size: 0.9em;
+    font-weight:normal;
+}
+
+/*  -------------------------------------------------------------
+  CUADRO TIEMPO, CUADRO AYUDA
+  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+#tiempo ,#aciertos , #desaciertos, #nivel{
+    width: 90%;
+    border: 0.06em solid #6a8040;
+    background-position: center;
+    margin: 0.2em auto 0.2em auto;
+    padding: 0;
+    text-align: center;
+}
+    .borderradius #tiempo, .borderradius #aciertos, .borderradius #desaciertos, .borderradius #nivel{
+        border-radius: 0.5em;
+        -webkit-border-radius: 0.5em;       
+        -moz-border-radius: 0.5em;
+    }
+
+   /*  Cuadro reloj
+       - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */      
+    #time {
+        width: 3em;
+        margin: 0em auto 0.2em auto;
+        padding: 0.1em 0;
+
+        background-color: black;
+        border: 0.035em solid #d0d2cd;
+        
+        font-weight: 100;
+        text-align: center;
+        color: red;
+        font-size: 1.3em;
+        font-family: 'Play','Questrial','Gudea','Signika',arial, serif;   
+    }  
+        .no-boxshadow #time {       
+            filter: progid:DXImageTransform.Microsoft.Shadow(color='#666666', Direction=135, Strength=4);
+        }    
+        /*  Modernizr: sombras y degradé de "login" y "registro"
+        - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+        .boxshadow #time {       
+            box-shadow: 0em 0em 0.1em #cecece;
+            -moz-box-shadow: 0em 0em 0.1em #cecece;
+            -webkit-box-shadow: 0em 0em 0.1em #cecece;
+            -o-box-shadow: 0em 0em 0.1em #cecece;
+        }    
+        .borderradius #time {
+            border-radius: 0.4em;
+            -webkit-border-radius: 0.4em;       
+            -moz-border-radius: 0.4em;
+            -o-border-radius: 0.4em;
+        }
+        .textshadow #time {
+            text-shadow: 0em 0em 0.02em #ff9494, 0.007em 0.007em 0.01em #ffbdbd;
+        }
+    /*  Cuadro Ayuda ?
+       - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */     
+    #textoAciertos , #textoDesaciertos, #textoNivel {
+        width: 100%;
+        height: 1.5em;
+        margin: 0em 0.3em 0em -13%;
+        background-color: transparent;
+        border: none;
+
+        text-align: center;
+        color: #0e1e7f;
+        font-size: 1.2em;
+        font-family: 'Signika', arial, serif;   
+    }  
+        .borderradius #help  {
+            border-radius: 0.4em;
+            -webkit-border-radius: 0.4em;       
+            -moz-border-radius: 0.4em;
+        }
+        .textshadow #help {
+            text-shadow: 0em 0em 0.02em #ff9494, 0.007em 0.007em 0.01em #ffbdbd;
+        }
+/*  -------------------------------------------------------------
+  PIE DE PÁGINA
+  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+footer {}
+
+
+/*  -------------------------------------------------------------
+  LETRA SUBTITULOS
+  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+
+h2 {            
+    font-size: 1.2em;
+}
+
+h3 {            
+    font-size: 1.05em;
+}
+    

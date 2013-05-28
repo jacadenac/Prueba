@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+
+<!--  Activa el modo standard de los navegadores -->
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+
+<html>
+    <head>
+        <!-- Formateado de Numeros -->
+        <title>Relational TAI</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+        <!-- Combo-handled YUI CSS files: reset,base,font,grids -->
+        <link rel="stylesheet" type="text/css" href="../css/Test.css">
+
+        <!-- diseño css "LoginDesign.css"-->
+        <!--<link rel="stylesheet" href="../css/PrimaryTest.css" type="text/css" media="screen">-->
+        <script src="http://code.jquery.com/jquery-latest.js"></script>
+        <script type="text/javascript" src="../../2_Controlador/Test.js"></script>
+        <script type="text/javascript" src="../../2_Controlador/MInteger.js"></script>
+        <script type="text/javascript" src="../../2_Controlador/MDecimal.js"></script>
+        <script type="text/javascript" src="../../2_Controlador/cookiePregunta.js"></script>
+        <script type="text/javascript" src="../../2_Controlador/Operaciones.js"></script>
+        <script type="text/javascript" src="../../2_Controlador/Inicio.js"></script>
+
+        <!--Libreria modernizr utilizada en el documento css-->
+        <script src="../../2_Controlador/modernizr.2.5.3.js"></script>
+        <!--Libreria jquery para el uso de eventos-->
+        
+        <script src="http://api.jquery.com/scripts/events.js"></script>
+        <script language="javascript" type="text/javascript">
+          
+            function llenarDIV(){
+                var obj = document.getElementById('test');
+                obj.innerHTML = 'Cambio de texto';
+
+
+            }
+
+
+                
+        </script>
+    </head>
+
+    <body onLoad="document.getElementById('respuesta1').focus();">
+
+        <div id="nombreUser"> </div>
+
+
+        <div id="cuerpo" name="cuerpo">
+            <header>
+                <div id="logo">
+                    <div id="imagenLogo"></div>
+                </div>
+                <figure id="cuadroTitulo">
+                    <h1>TUTOR ADAPTATIVO INTELIGENTE</h1>
+                </figure>
+            </header>
+
+            <div id="contenedorColumnas">
+                <form id="test">
+                    <table>
+                        <tr>
+                            <td>
+                                <!--<input type="text" id="numeroPregunta" value="#1"/>-->
+                                <script type="text/javascript">
+                                   mostrarUsuario();
+
+                                  
+                                    var puntaje="0";
+                                    document.write('<br><input type="text" id="numeroPregunta" class="puntaje" value="' + puntaje + '" readonly="readonly" />');
+                                     
+                                  
+          
+                                   
+                                </script>
+                                <input type="text" id="tituloTest" name="tituloTest" readonly="readonly"/> <!--el titulo debe ser una variable-->
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                            <!--<input type="text" id="pregunta" name="usuario"
+                            value="Aqui va la pregunta!!" required="required"/> -->
+
+                            <!--esto es de Freddy-->
+                            <iframe src="pregunta.html" id="SubHtml" width="500" height="100" scrolling="no" frameborder="0">
+                            </iframe>
+                            <!--Hasta aquí-->
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <table id="respuestas">
+                                <tr><td><label class="numeroRespuesta" for="name">1.</label></td>
+                                    <td><label class="numeroRespuesta" for="name">2.</label></td>
+                                    <td><label class="numeroRespuesta" for="name">3.</label></td>
+                                    <td><label class="numeroRespuesta" for="name">4.</label></td>
+                                </tr>
+                                <tr>
+                                    <script type="text/javascript">
+                                      
+                                      
+                                        
+
+                                        document.write('<td><input type="button" class="boton" id="respuesta1" onClick="validarRespuesta(0)"/></td>');
+                                        document.write('<td><input type="button" class="boton" id="respuesta2" onClick="validarRespuesta(1)"/></td>');
+                                        document.write('<td><input type="button" class="boton" id="respuesta3" onClick="validarRespuesta(2)"/></td>');
+                                        document.write('<td><input type="button" class="boton" id="respuesta4" onClick="validarRespuesta(3)"/></td>');
+                                        $("#respuesta1").keypress(function(event) {
+                                            if (event.which == 13 ) {
+                                                event.preventDefault();
+                                            }
+                                            if(event.which == 49){
+                                                document.getElementById("respuesta1").click();
+                                            }
+                                            if(event.which == 50){
+                                                document.getElementById("respuesta2").click();
+                                            }
+                                            if(event.which == 51){
+                                                document.getElementById("respuesta3").click();
+                                            }
+                                            if(event.which == 52){
+                                                document.getElementById("respuesta4").click();
+                                            }
+                                        });
+                                                
+                                                
+                                        
+                                       
+                                       
+                                    </script>
+                                </tr>
+                            </table>
+                        </tr>
+                    </table>
+                </form>
+                <form id="informacion" action="../../3_AccesoDatos/Actualizar.php" method="get">
+                    <div id="datos">
+                        <input type="text" id="nivelEnviar" name="nivelEnviar">
+                        <input type="text" id="puntajeEnviar" name="puntajeEnviar">
+                        <input type="text" id="tiempoEnviar" name="tiempoEnviar">
+                        <input type="text" id="usuarioEnviar" name="usuarioEnviar">
+                    </div>
+                    <table>
+                        <tr><td><h2>Información</h2></td></tr>
+                        <tr><td><div id="tiempo">
+                            <h3>Tiempo</h3>
+                            <div id="reloj">
+                                <script type="text/javascript">
+                                    document.write('<input type="text" id="time" size="4" class="time" value="" readonly="readonly" />');
+                                    
+                                    setTimeout(MostrarCrono, 8000);
+
+                                    //MostrarCrono();
+                                    
+                                </script>
+                            </div>
+                        </div></td></tr>
+                        <tr><td><div id="aciertos">
+                            <h3>Aciertos</h3>
+                            <script type="text/javascript">
+                                    
+                                var puntaje="0";
+                                document.write('<input type="text" name="aciertos" id="textoAciertos" size="4" class="puntaje" value="' + puntaje + '" readonly="readonly" />');
+                                
+                            </script>
+                        </div></td></tr>
+                        <tr><td><div id="desaciertos">
+                            <h3>Desaciertos</h3>
+                            <script type="text/javascript">
+                          
+                            var puntaje="0";
+                            document.write('<input name="desaciertos" type="text" id="textoDesaciertos" size="4" class="puntaje" value="' + puntaje + '" readonly="readonly" />');
+                       
+                            </script>
+                        </div></td></tr>
+                        <tr><td><div id="nivel">
+                            <h3>Nivel</h3>
+                            <input type="text" name="nivel" id="textoNivel" size="4" class="nivel" readonly="readonly" />
+                            <script type="text/javascript">
+                                 setTimeout(crearSetPregunta, 6000);
+                                 setTimeout(setearNumeros, 6000);
+
+                                 function volver(){
+                                     createCookie("pregunta", " ", 1);
+                                    window.location.href='Inicio.php';
+                                 }
+                            </script>
+                        </div></td></tr>
+                        <tr><td><input type="button" class="boton" id="botonAyuda" role="form" value="Ayuda"
+                        onClick=" window.location.href='Inicio.php' "></td></tr>
+                        <tr><td><input type="button" class="boton" id="botonSalir" role="form" value="Volver"
+                        onClick=" volver() "></td></tr>
+
+                    </table>
+                </form>
+            </div>
+           
+            <footer>
+                <div id="pieDePagina">(c) 2012 TAI</div>
+            </footer>
+        </div>
+    </body>
+
+</html>

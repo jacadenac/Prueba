@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>TAI-AyudaEnterosResta</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel="stylesheet" href="../css/Ayuda.css" type="text/css" media="screen">
+        <!--Libreria modernizr para compatibilidad con css3 y html5-->
+        <script src="../../2_Controlador/modernizr.2.5.3.js"></script>
+    </head>
+    <body>
+            <header>
+                <div id="cuadroTitulo"> 
+                    <div id="imagenLogo"></div>
+                    <h1>TUTOR ADAPTATIVO INTELIGENTE</h1>
+                </div>
+            </header>          
+            <nav>
+                <ul id="menu">
+                    <li><a href="Inicio.html">Inicio</a></li>
+                    <li><a href="#">Ayuda</a>
+                        <ul>
+                            <li>
+                                <a href="#">Enteros</a>
+                                <ul>
+                                    <li><a href="AyudaEnterosSuma.html">Suma</a></li>
+                                    <li><a href="AyudaEnterosResta.html">Resta</a></li>
+                                    <li><a href="AyudaEnterosMultiplicacion.html">Multiplicación</a></li>
+                                    <li><a href="AyudaEnterosDivision.html">División</a></li>
+                                 </ul>
+                            </li>
+                            <li>
+                                <a href="#">Fraccionarios</a>
+                                <ul>
+                                    <li><a href="AyudaFraccionariosSuma.html">Suma</a></li>
+                                    <li><a href="AyudaFraccionariosResta.html">Resta</a></li>
+                                    <li><a href="AyudaFraccionariosMultiplicacion.html">Multiplicación</a></li>
+                                    <li><a href="AyudaFraccionariosDivision.html">División</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">Decimales</a>
+                                <ul>
+                                    <li><a href="AyudaDecimalesSuma.html">Suma</a></li>
+                                    <li><a href="AyudaDecimalesResta.html">Resta</a></li>
+                                    <li><a href="AyudaDecimalesMultiplicacion.html">Multiplicación</a></li>
+                                    <li><a href="AyudaDecimalesDivision.html">División</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a href="Perfil.html">Perfil</a></li>
+                    <li><a href="index.html">Salir</a></li>
+                </ul>
+            </nav>
+            <div id="contenedorColumnas">
+                <div id="columnaPrincipal">
+                    <table>
+                        <tr><td><h2>Resta de Enteros</h2> 
+                                
+                        <table id="tablaVideo">
+                            <tr><td><h2>Video de Ayuda</h2></td></tr>
+                            <tr><td>
+                                <object id="videoYoutube" width="425" height="344" type="application/x-shockwave-flash" data="https://www.youtube-nocookie.com/v/6pfWMZfRRVs?version=3&amp;hl=es_ES&amp;rel=0">
+                                    <param name="movie" value="https://www.youtube-nocookie.com/v/6pfWMZfRRVs?version=3&amp;hl=es_ES&amp;rel=0" />
+                                </object>
+                                <!--<video controls width="360" height="240" poster="">
+                                <source src="http://youtu.be/6pfWMZfRRVs" type="video/mp4" />
+                                <object type="application/x-shockwave-flash" width="360" height="240" data="player.swf?file=archivo.mp4">
+                                    <param name="videoAyuda" value="player.swf?file=archivo.mp4" />
+                                </object>
+                            </video></td></tr>-->
+                            </td></tr>
+                            <tr><td><p id="descripcionVideo">Descripción del Video</p></td></tr>
+                        </table> 
+
+                        <p>Se procede colocando el minuendo encima del sustraendo,
+                        ordenando las cifras en columnas de derecha a izquierda
+                        según el orden de unidades, decenas, centenas etc. igual
+                        que en la suma.<br/>
+                        A continuación se comienza restando la cifra de la 
+                        columna de unidades del minuendo al sustraendo, 
+                        teniendo en cuenta que si la cifra del minuendo es 
+                        menor que la del sustraendo se suma a la cifra 10 
+                        unidades, colocando en la línea de acarreo sobre la 
+                        columna siguiente (las decenas) un 1, que se sumará a la
+                        cifra del sustraendo de las decenas. Una vez hecho esto
+                        se restan las cifras de minuendo a sustraendo de la 
+                        columna unidades y se escribe la cifra resultado en la
+                        línea de resto de la misma columna. De igual manera, se
+                        procede en la columna de las decenas, centenas, unidades
+                        de millar, ect. sin olvidar sumar los acarreos de 
+                        columnas anteriores al sustraendo debido a la suma de 
+                        diez unidades en la columna anterior a la cifra del 
+                        minuendo si éste es menor que el sustraendo.<br/>
+                        La cifra 0 en el minuendo se considera como un 10, 
+                        mientras que en el sustraendo no tiene ningún efecto.<br/>
+                        Como ejemplo ilustrativo del proceso de restado de dos
+                        números, se utilizarán el 1419 y 751, obteniéndose: </p>
+                        <img class="imagenAyuda" src="../imagenes/PaginasAyuda2/Enteros/Resta/paso1.png" />
+                        <br/>
+                        <p>La comprobación del resultado como «Resto o Diferencia»
+                        se hace sumando dicho resultado con el sustraendo, ya 
+                        que en toda resta se cumple que: Sustraendo + Diferencia
+                        = Minuendo, o sea, el resultado de dicha suma debe de 
+                        ser el minuendo, en este caso ejemplo sería 668+751=1419.</p>
+                        <p id="bibliografia"><br/>Tomado de Wikipedia: <br/><a href="http://es.wikipedia.org/wiki/Resta">
+                            http://es.wikipedia.org/wiki/Resta</a>
+                        </p></td></tr>
+                    </table>
+                </div>
+            </div>
+            
+            <footer>
+                <div id="pieDePagina">pie de página</div>
+            </footer>
+    </body>
+</html>

@@ -1,0 +1,81 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>TAI-Registro</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">      
+        <link rel="stylesheet" href="../css/Login.css" type="text/css" 
+              media="screen">
+        <!--Libreria modernizr para compatibilidad con css3 y html5-->
+        <script src="../../2_Controlador/modernizr.2.5.3.js"></script>
+    </head>
+    <body onLoad="document.getElementById('nombreInicio').focus();">        
+            <header>
+                <div id="cuadroTitulo"> 
+                    <div id="imagenLogo"></div>
+                    <h1>TUTOR ADAPTATIVO INTELIGENTE</h1>
+                </div>
+            </header> 
+            
+            <div id="contenedorColumnas">
+                <section id="formularios">
+                    <form id="formularioLogin" name="formularioLogin" 
+                    action="Servidor\Servidores.php" method="post">
+                        <table>
+                            <tr><td><h2>Iniciar Sesión</h2></td></tr>   
+
+                            <tr><td><label>Usuario:</label></td></tr>
+                            <tr><td><input type="text" id="nombreInicio" name="username" 
+                                    placeholder="Ingrese su usuario" required></td></tr>
+
+                            <tr><td><label>Contraseña:</label></td></tr>
+                            <tr><td><input type="password" id="passInicio" name="password"
+                                    placeholder="Ingrese su contraseña" required></td></tr>
+
+                            <tr><td><input type="submit" class="boton" id="btnIniciarSesion" value="Acceder"/></td></tr>
+                        </table>
+                    </form> 
+
+                    <form id="formularioRegistro" name="formularioRegistro"
+                    action="Servidor\Registro.php">
+                        <table>
+                            <tr><td><h2>Registrarse</h2>
+                            <tr><td><label>Usuario:</label></td></tr>
+                            <tr><td><input type="text" onchange="showUser(this.value)" id="nombreRegistro" 
+                                    placeholder="Ingrese su usuario" name="usernameRegistro"
+                                    required />
+                            <tr><td><div id="txtHint"><b></b></div>
+                            <tr><td><label>Contraseña:</label></td></tr>
+                            <tr><td><input type="password" id="passRegistro" name="passwordRegistro"
+                                    placeholder="Ingrese su contraseña" required> 
+                            <tr><td><label>Verifique la contraseña:</label></td></tr>
+                            <tr><td><input type="password" id="pass2Registro"  name="passwordRegistro2"
+                                    placeholder="Repita su contraseña" required>   
+                            <tr><td><label>Email:</label></td></tr>
+                            <tr><td><input type="email" id="email" 
+                                    placeholder="email@dominio.com" required></td></tr>
+
+                            <tr><td><label id="nivel">Nivel:</label>
+                            <select id="selectNivel" >
+                                    <option value="-1">Uno</option>
+                                    <option value="-2">Dos</option>
+                                    <option value="-3">Tres</option>
+                                    <option value="-4">Cuatro</option>
+                                    <option value="0">Cinco</option>
+                                    <option value="1">Seis</option>
+                                    <option value="2">Siete</option>
+                                    <option value="3">Ocho</option>
+                                    <option value="4">Nueve</option>
+                            </select></td></tr>
+
+                            <tr><td><input type="submit" class="boton" id="btnRegistrarme" value="Registrarse"/></td></tr>
+                        </table>
+                    </form>
+                </section>
+            </div>
+      
+            <footer>
+                <div id="pieDePagina">pie de página</div>
+            </footer>        
+    </body>
+</html>

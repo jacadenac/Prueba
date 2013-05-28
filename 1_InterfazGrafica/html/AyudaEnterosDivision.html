@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>TAI-AyudaEnterosDivisión</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel="stylesheet" href="../css/Ayuda.css" type="text/css" media="screen">
+        <!--Libreria modernizr para compatibilidad con css3 y html5-->
+        <script src="../../2_Controlador/modernizr.2.5.3.js"></script>
+    </head>
+    <body>
+            <header>
+                <div id="cuadroTitulo"> 
+                    <div id="imagenLogo"></div>
+                    <h1>TUTOR ADAPTATIVO INTELIGENTE</h1>
+                </div>
+            </header>         
+            <nav>
+                <ul id="menu">
+                    <li><a href="Inicio.html">Inicio</a></li>
+                    <li><a href="#">Ayuda</a>
+                        <ul>
+                            <li>
+                                <a href="#">Enteros</a>
+                                <ul>
+                                    <li><a href="AyudaEnterosSuma.html">Suma</a></li>
+                                    <li><a href="AyudaEnterosResta.html">Resta</a></li>
+                                    <li><a href="AyudaEnterosMultiplicacion.html">Multiplicación</a></li>
+                                    <li><a href="AyudaEnterosDivision.html">División</a></li>
+                                 </ul>
+                            </li>
+                            <li>
+                                <a href="#">Fraccionarios</a>
+                                <ul>
+                                    <li><a href="AyudaFraccionariosSuma.html">Suma</a></li>
+                                    <li><a href="AyudaFraccionariosResta.html">Resta</a></li>
+                                    <li><a href="AyudaFraccionariosMultiplicacion.html">Multiplicación</a></li>
+                                    <li><a href="AyudaFraccionariosDivision.html">División</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">Decimales</a>
+                                <ul>
+                                    <li><a href="AyudaDecimalesSuma.html">Suma</a></li>
+                                    <li><a href="AyudaDecimalesResta.html">Resta</a></li>
+                                    <li><a href="AyudaDecimalesMultiplicacion.html">Multiplicación</a></li>
+                                    <li><a href="AyudaDecimalesDivision.html">División</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a href="Perfil.html">Perfil</a></li>
+                    <li><a href="index.html">Salir</a></li>
+                </ul>
+            </nav>
+            <div id="contenedorColumnas">
+                <div id="columnaPrincipal">
+                    <table>
+                        <tr><td><h2>División de Enteros</h2> 
+                                
+                        <table id="tablaVideo">
+                            <tr><td><h2>Video de Ayuda</h2></td></tr>
+                            <tr><td>
+                                <object id="videoYoutube" width="425" height="344" type="application/x-shockwave-flash" data="https://www.youtube-nocookie.com/v/6pfWMZfRRVs?version=3&amp;hl=es_ES&amp;rel=0">
+                                    <param name="movie" value="https://www.youtube-nocookie.com/v/6pfWMZfRRVs?version=3&amp;hl=es_ES&amp;rel=0" />
+                                </object>
+                                <!--<video controls width="360" height="240" poster="">
+                                <source src="http://youtu.be/6pfWMZfRRVs" type="video/mp4" />
+                                <object type="application/x-shockwave-flash" width="360" height="240" data="player.swf?file=archivo.mp4">
+                                    <param name="videoAyuda" value="player.swf?file=archivo.mp4" />
+                                </object>
+                            </video></td></tr>-->
+                            </td></tr>
+                            <tr><td><p id="descripcionVideo">Descripción del Video</p></td></tr>
+                        </table> 
+
+                        <p>En la división larga, el dividendo se escribe a la 
+                        izquierda del divisor (la «casilla de la división» no 
+                        tiene un nombre predefinido1 ), los sucesivos cocientes
+                        y residuos se construyen por arriba y por debajo.</p>
+                        <img class="imagenAyuda" src="../imagenes/PaginasAyuda2/Enteros/Division/paso1.png" />
+                        <br/>
+                        <p>Ejemplo : División de 500 por 4.</p>
+                        <img class="imagenAyuda" src="../imagenes/PaginasAyuda2/Enteros/Division/paso2.png" />
+                        <br/>
+                        <p>Resultado : En la división de 500 por 4 el cociente
+                        es 125 y el resto 0.</p>
+                        <p>Variante corta</p>
+                        <p>En esta variante, se omite la escritura explícita de 
+                        las multiplicaciones sucesivas...</p>
+                        <img class="imagenAyuda" src="../imagenes/PaginasAyuda2/Enteros/Division/paso3.png" />
+                        <br/>
+                        <p>Método de la potencia</p>
+                        <p>Se escribe el dividendo arriba a la izquierda y el 
+                        divisor arriba a la derecha. El cociente se construye 
+                        paso a paso y se escribe sobre el divisor. Los restos
+                        sucesivos y los dividendos sucesivos se escriben bajo
+                        el primer dividendo.<br/>
+                        En el siguiente ejemplo, se calcula cada múltiplo y 
+                        enseguida el resto, efectuando la sustracción indicada.
+                        <br/>Ejemplo : División de 6359 por 17.</p>
+                        <img class="imagenAyuda" src="../imagenes/PaginasAyuda2/Enteros/Division/paso4.png" />
+                        <br/>
+                        <img class="imagenAyuda" src="../imagenes/PaginasAyuda2/Enteros/Division/paso5.png" />
+                        <br/>
+                        <img class="imagenAyuda" src="../imagenes/PaginasAyuda2/Enteros/Division/paso6.png" />
+                        <br/>
+                        <p>Resultado : En la división de 6359 por 17 el cociente es 374 y el resto 1.<br/><br/></p>
+                        <p id="bibliografia"><br/>Tomado de Wikipedia: <br/><a href="http://es.wikipedia.org/wiki/Divisi%C3%B3n_larga">
+                            http://es.wikipedia.org/wiki/División_larga</a>
+                        </p></td></tr>
+                    </table>
+                </div>
+            </div>
+            
+            <footer>
+                <div id="pieDePagina">pie de página</div>
+            </footer>
+    </body>
+</html>
